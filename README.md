@@ -1,4 +1,4 @@
-## Malware Sinkholes List in different formats (xls, xlsx, csv, ods)
+## Malware Sinkhole List in different formats (xls, xlsx, csv, ods)
 
 
 ![sinkhole_image](https://s18.postimg.org/rbrb04k7d/sinkhole_pic.png)
