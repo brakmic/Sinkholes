@@ -6,7 +6,7 @@
 import sys
 import json
 import csv
-# import xlsxwriter
+import xlsxwriter
 # xls files: TODO
 # import odswriter
 
@@ -30,7 +30,7 @@ def main(debug = False):
         'xls',
         'xlsx',
         'ods',
-        'csv'
+        #'csv'
     ]
 
     try:
@@ -50,7 +50,12 @@ def main(debug = False):
             try:
                 outfile_name = '{}.{}'.format(OUTFILE_NAME, extension)
                 with open(outfile_name, 'w') as outfile_handle:
-                    write_out(sinkholes, extension, to=outfile_handle)
+                    write_out(
+                        our_data=sinkholes, 
+                        to=outfile_handle,
+                        with_filetype=extension, 
+                        full_file_name=outfile_name
+                    )
             except Exception as warning:
                 # If we encountered an error with a certain format, just move
                 # on...
@@ -62,22 +67,44 @@ def main(debug = False):
     return True
 
 
-def write_out(sinkhole_dict, extension, to=None):
+def write_out(our_data, with_filetype, to=None, full_file_name=None):
     """
         Gets the text to write out for a given file extension with the given
         data.
     """
+    sinkhole_list = our_data
+    extension = with_filetype
+
     # Handle JSON files
     if extension == 'json':
-        to.write(json.dumps(sinkhole_dict))
+        to.write(json.dumps(sinkhole_list))
 
     # Handle CSV files
     elif extension == 'csv':
         # First element keys should be the same consistent keys used throughout
-        header = list(sinkhole_dict[0].keys())
+        header = list(sinkhole_list[0].keys())
         csv_out = csv.DictWriter(to, fieldnames=header)
         csv_out.writeheader()
-        csv_out.writerows(sinkhole_dict)
+        csv_out.writerows(sinkhole_list)
+
+    elif extension == 'xlsx':
+        xlsx_file = xlsxwriter.Workbook(full_file_name)
+        xlsx_sheet = xlsx_file.add_worksheet()
+
+        for row_num, row_data in enumerate(sinkhole_list):
+            for col_num, dict_key in enumerate(row_data):
+                # Writing out the header
+                if row_num == 0:
+                    xlsx_sheet.write(row_num, col_num, dict_key)
+
+                # Writing out the data in each row
+                xlsx_sheet.write(
+                    row_num + 1,
+                    col_num,
+                    sinkhole_list[row_num][dict_key]
+                )
+
+        xlsx_file.close()
 
     # We got a weird extension or don't currently support it...
     else:
