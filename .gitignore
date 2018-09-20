@@ -1,1 +1,9 @@
+# git ignore file
+
+# python
 __pycache__
+venv
+
+# vim
+*.swp
+*.swo
