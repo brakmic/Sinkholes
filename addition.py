@@ -6,6 +6,16 @@
     Simply populate this data structure and run add_rows.py at the terminal to
     add rows to the sinkhole list.
 """
+
+# Example. Only the bottom most "addition(s)" will be added in.
+addition = [{
+    'Organization': 'OpenDNS',
+    'IP Range': '146.112.61.104-110',
+    'Whois': 'hit-{block,botnet,adult,malware,phish,block,malware}.opendns.com',
+    'Notes': 'https://support.opendns.com/hc/en-us/articles/227986927-What-are-the-Cisco-Umbrella-Block-Page-IP-Addresses-'
+}]
+
+
 addition = [{
     # The Organization responsible / running the sinkholes specified in the IP
     # Ranges section
@@ -26,9 +36,3 @@ addition = [{
 	'Notes': ''
 }]
 
-addition = [{
-    'Organization': 'OpenDNS',
-    'IP Range': '146.112.61.104-110',
-    'Whois': 'hit-{block,botnet,adult,malware,phish,block,malware}.opendns.com',
-    'Notes': 'https://support.opendns.com/hc/en-us/articles/227986927-What-are-the-Cisco-Umbrella-Block-Page-IP-Addresses-'
-}]
