@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """
     Script to easy add rows to the sinkhole list! :D
+
+    Author: Spencer Walden (spencer@icebrg.io / Masq)
+    Date: September 23rd, 2018
 """
 
 import sys
@@ -29,15 +32,16 @@ def main(debug=False, sync=False):
     """
         Adds in additional entries to the Sinkhole List.
     """
-    # just read from the json file since it's easiest
+    # Read from the csv file since it maintains header order
     infile = OUTFILE_NAME + '.csv'
 
     # list of supported extensions we want to write out to
     out_extensions = [
         'json',
-        'csv',
+
         # let's do csv file first since it's easiest, and then just
         # copy things to other file formats
+        'csv',
         'xls',
         'xlsx',
         'ods',
