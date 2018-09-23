@@ -68,7 +68,7 @@ The table below was created with this nice [online conversion tool](https://dona
 
 ## Contributing
 
-[Contributing](https://github.com/brakmic/Sinkholes/blob/master/CONTRIBUTING.md))
+[Contributing](https://github.com/brakmic/Sinkholes/blob/master/CONTRIBUTING.md)
 
 ## Code of Conduct
 
