@@ -16,23 +16,23 @@ addition = [{
 }]
 
 
-addition = [{
-    # The Organization responsible / running the sinkholes specified in the IP
-    # Ranges section
-	'Organization': '',
-
-    # The IP ranges that are part of the sinkhole. Formats include CIDR
-    # notation, singular IP addresses, or a small range of IPs designated with
-    # a dash character (e.g. 192.168.0.1-10 to indicate all IPs starting at
-    # 192.168.0.1 and incrementing up to 192.168.0.10 are sinkhole IPs)
-	'IP Range': '',
-
-    # Fill this in with either the organization name or any DNS name for the IP
-    # ranges listed above.
-	'Whois': '',
-
-    # Generally, fill this in with any reference URLs, additional information
-    # regarding the IP range, etc.
-	'Notes': ''
-}]
-
+#addition = [{
+#    # The Organization responsible / running the sinkholes specified in the IP
+#    # Ranges section
+#	'Organization': '',
+#
+#    # The IP ranges that are part of the sinkhole. Formats include CIDR
+#    # notation, singular IP addresses, or a small range of IPs designated with
+#    # a dash character (e.g. 192.168.0.1-10 to indicate all IPs starting at
+#    # 192.168.0.1 and incrementing up to 192.168.0.10 are sinkhole IPs)
+#	'IP Range': '',
+#
+#    # Fill this in with either the organization name or any DNS name for the IP
+#    # ranges listed above.
+#	'Whois': '',
+#
+#    # Generally, fill this in with any reference URLs, additional information
+#    # regarding the IP range, etc.
+#	'Notes': ''
+#}]
+#

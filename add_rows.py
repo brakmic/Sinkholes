@@ -6,9 +6,10 @@
 import sys
 import json
 import csv
-import xlsxwriter
-# xls files: TODO
-# import odswriter
+
+# This (in conjunction with plugins) allows us to convert to many formats
+# namely, xls, xlsx, and ods
+import pyexcel
 
 # import our additional data
 import addition
@@ -26,11 +27,13 @@ def main(debug = False):
 
     # list of supported extensions we want to write out to
     out_extensions = [
-        #'json',
+        'json',
+        'csv',
+        # let's do csv file first since it's easiest, and then just
+        # copy things to other file formats
         'xls',
         'xlsx',
         'ods',
-        #'csv'
     ]
 
     try:
@@ -87,24 +90,29 @@ def write_out(our_data, with_filetype, to=None, full_file_name=None):
         csv_out.writeheader()
         csv_out.writerows(sinkhole_list)
 
-    elif extension == 'xlsx':
-        xlsx_file = xlsxwriter.Workbook(full_file_name)
-        xlsx_sheet = xlsx_file.add_worksheet()
+    elif extension in ['xlsx', 'xls', 'ods']:
+        # Kinda cheating here... Just grab the CSV file we already wrote out
+        # and copy it over to a different format
+        csv_name = full_file_name.replace(extension, 'csv')
+        pyexcel.save_as(file_name=csv_name, dest_file_name=full_file_name)
 
-        for row_num, row_data in enumerate(sinkhole_list):
-            for col_num, dict_key in enumerate(row_data):
-                # Writing out the header
-                if row_num == 0:
-                    xlsx_sheet.write(row_num, col_num, dict_key)
+        #xlsx_file = xlsxwriter.Workbook(full_file_name)
+        #xlsx_sheet = xlsx_file.add_worksheet()
 
-                # Writing out the data in each row
-                xlsx_sheet.write(
-                    row_num + 1,
-                    col_num,
-                    sinkhole_list[row_num][dict_key]
-                )
+        #for row_num, row_data in enumerate(sinkhole_list):
+        #    for col_num, dict_key in enumerate(row_data):
+        #        # Writing out the header
+        #        if row_num == 0:
+        #            xlsx_sheet.write(row_num, col_num, dict_key)
 
-        xlsx_file.close()
+        #        # Writing out the data in each row
+        #        xlsx_sheet.write(
+        #            row_num + 1,
+        #            col_num,
+        #            sinkhole_list[row_num][dict_key]
+        #        )
+
+        #xlsx_file.close()
 
     # We got a weird extension or don't currently support it...
     else:
