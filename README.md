@@ -1,7 +1,7 @@
 ## Malware Sinkhole List in different formats (xls, xlsx, csv, ods)
 
 
-![sinkhole_image](https://s18.postimg.org/rbrb04k7d/sinkhole_pic.png)
+![sinkhole_image](https://raw.githubusercontent.com/brakmic/Sinkholes/master/sinkhole.jpg)
 
 
 Based on data from Lesley Carhart's [article](https://tisiphone.net/2017/05/16/consolidated-malware-sinkhole-list/) `Consolidated Malware Sinkhole List`.
