@@ -1,4 +1,4 @@
-# Malware Sinkhole List in different formats (xls, xlsx, csv, ods, json)
+### Malware Sinkhole List in different formats (xls, xlsx, csv, ods, json)
 
 
 ![sinkhole_image](https://raw.githubusercontent.com/brakmic/Sinkholes/master/sinkhole.jpg)
@@ -11,6 +11,15 @@ Based on data from Lesley Carhart's [article](https://tisiphone.net/2017/05/16/c
 I've only transferred the data to different formats. 
 
 The table below was created with this nice [online conversion tool](https://donatstudios.com/CsvToMarkdownTable).
+
+----
+
+### Pythons scripts for adding new rows to the list
+
+Thanks to [@masq](https://github.com/masq) for the nice python scripts! 
+Check the [source header](https://github.com/brakmic/Sinkholes/blob/master/addition.py) on how to run them.
+
+----- 
 
 | Organization            | IP Ranges        | Whois                                                | Notes                                                                           |                                                                    |                     |                   |                |  |  | 
 |-------------------------|------------------|------------------------------------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------|---------------------|-------------------|----------------|--|--| 
