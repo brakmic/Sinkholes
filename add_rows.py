@@ -1,46 +1,63 @@
 #!/usr/bin/env python3
 """
     Script to easy add rows to the sinkhole list! :D
+
+    Author: Spencer Walden (spencer@icebrg.io / Masq)
+    Date: September 23rd, 2018
 """
 
 import sys
 import json
+from collections import OrderedDict
 import csv
-import xlsxwriter
-# xls files: TODO
-# import odswriter
+
+# This (in conjunction with plugins) allows us to convert to many formats
+# namely, xls, xlsx, and ods
+import pyexcel
 
 # import our additional data
-import addition
+from addition import addition as our_additional_rows
 
 # Our outfile name(s)
 OUTFILE_NAME = 'Sinkholes_List'
+HEADER = (
+    'Organization',
+    'IP Range',
+    'Whois',
+    'Notes'
+)
 
 
-def main(debug = False):
+def main(debug=False, sync=False):
     """
         Adds in additional entries to the Sinkhole List.
     """
-    # just read from the json file since it's easiest
-    infile = OUTFILE_NAME + '.json'
+    # Read from the csv file since it maintains header order
+    infile = OUTFILE_NAME + '.csv'
 
     # list of supported extensions we want to write out to
     out_extensions = [
-        #'json',
+        'json',
+
+        # let's do csv file first since it's easiest, and then just
+        # copy things to other file formats
+        'csv',
         'xls',
         'xlsx',
         'ods',
-        #'csv'
     ]
 
     try:
-        with open(infile, 'r') as infile:
-            sinkholes = json.loads(infile.read())
+        with open(infile, 'r') as infile_handle:
+            sinkholes = [row for row in csv.DictReader(infile_handle)]
     except Exception as error:
         print('[-] ERROR: {}'.format(error))
         sys.exit(1)
 
-    sinkholes += addition.addition
+    # With the sync option, we don't want to add anything, just make sure every
+    # file format is properly synced up with each other
+    if not sync:
+        sinkholes += our_additional_rows
 
     if debug:
         from pprint import pprint
@@ -82,29 +99,16 @@ def write_out(our_data, with_filetype, to=None, full_file_name=None):
     # Handle CSV files
     elif extension == 'csv':
         # First element keys should be the same consistent keys used throughout
-        header = list(sinkhole_list[0].keys())
+        header = HEADER
         csv_out = csv.DictWriter(to, fieldnames=header)
         csv_out.writeheader()
         csv_out.writerows(sinkhole_list)
 
-    elif extension == 'xlsx':
-        xlsx_file = xlsxwriter.Workbook(full_file_name)
-        xlsx_sheet = xlsx_file.add_worksheet()
-
-        for row_num, row_data in enumerate(sinkhole_list):
-            for col_num, dict_key in enumerate(row_data):
-                # Writing out the header
-                if row_num == 0:
-                    xlsx_sheet.write(row_num, col_num, dict_key)
-
-                # Writing out the data in each row
-                xlsx_sheet.write(
-                    row_num + 1,
-                    col_num,
-                    sinkhole_list[row_num][dict_key]
-                )
-
-        xlsx_file.close()
+    elif extension in ['xlsx', 'xls', 'ods']:
+        # Kinda cheating here... Just grab the CSV file we already wrote out
+        # and copy it over to a different format
+        csv_name = full_file_name.replace(extension, 'csv')
+        pyexcel.save_as(file_name=csv_name, dest_file_name=full_file_name)
 
     # We got a weird extension or don't currently support it...
     else:
@@ -124,5 +128,10 @@ if __name__ == '__main__':
         'A debug flag; will not write out to file '
         'will only print to stdout using pretty print'
     ))
+    ap.add_argument('--sync', action='store_true', help=(
+        'Sync will simply *not* perform any adding of rows to files. Instead, '
+        'it will perform all of the same actions to sync the files so each '
+        'file format reflects the same data.'
+    ))
     args = ap.parse_args()
-    main(debug=args.debug)
+    main(debug=args.debug, sync=args.sync)

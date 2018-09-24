@@ -1,4 +1,4 @@
-## Malware Sinkhole List in different formats (xls, xlsx, csv, ods)
+# Malware Sinkhole List in different formats (xls, xlsx, csv, ods, json)
 
 
 ![sinkhole_image](https://raw.githubusercontent.com/brakmic/Sinkholes/master/sinkhole.jpg)
@@ -66,6 +66,14 @@ The table below was created with this nice [online conversion tool](https://dona
 |                         |                  |                                                      |                                                                                 |                                                                    |                     |                   |                |  |  | 
 
 
-#### License
+## Contributing
+
+[Contributing](https://github.com/brakmic/Sinkholes/blob/master/CONTRIBUTING.md)
+
+## Code of Conduct
+
+[Code of Conduct](https://github.com/brakmic/Sinkholes/blob/master/CODE_OF_CONDUCT.md)
+
+## License
 
 [MIT](https://github.com/brakmic/Sinkholes/blob/master/LICENSE)
