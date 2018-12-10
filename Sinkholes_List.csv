@@ -24,7 +24,6 @@ Hyas,192.169.69.25,sinkhole.hyas.com,
 Kaspersky,93.159.228.22,sinkhole.kaspersky.com,
 Kaspersky,95.211.172.143,sinkhole.kaspersky.com,
 MalwareDomains,139.146.167.25,Computer Problem Solving (CPS),
-Microsoft,131.253.18.11-12,Microsoft,http://doc.emergingthreats.net/bin/view/Main/2016101
 Microsoft,199.2.137.0/24,Microsoft,https://lists.emergingthreats.net/pipermail/emerging-sigs/2013-June/022148.html
 Microsoft,204.95.99.59,Microsoft,https://lists.emergingthreats.net/pipermail/emerging-sigs/2013-June/022148.html
 Microsoft,207.46.90.0/24,Microsoft,https://lists.emergingthreats.net/pipermail/emerging-sigs/2013-June/022148.html
@@ -67,4 +66,12 @@ Wapack Labs,23.253.46.64,,https://wapacklabs.blogspot.com/2016/07/wapack-labs-si
 Zinkhole.org,176.31.62.76,suspended-domain.org,
 Zinkhole.org,178.32.140.251,suspended-domain.org,
 Zinkhole.org,94.23.175.2,suspended-domain.org,
-OpenDNS,146.112.61.104-110,"hit-{block,botnet,adult,malware,phish,block,malware}.opendns.com",https://support.opendns.com/hc/en-us/articles/227986927-What-are-the-Cisco-Umbrella-Block-Page-IP-Addresses-
+OpenDNS,146.112.61.104,hit-block.opendns.com,https://support.opendns.com/hc/en-us/articles/227986927-What-are-the-Cisco-Umbrella-Block-Page-IP-Addresses-
+OpenDNS,146.112.61.105,hit-botnet.opendns.com,https://support.opendns.com/hc/en-us/articles/227986927-What-are-the-Cisco-Umbrella-Block-Page-IP-Addresses-
+OpenDNS,146.112.61.106,hit-adult.opendns.com,https://support.opendns.com/hc/en-us/articles/227986927-What-are-the-Cisco-Umbrella-Block-Page-IP-Addresses-
+OpenDNS,146.112.61.107,hit-malware.opendns.com,https://support.opendns.com/hc/en-us/articles/227986927-What-are-the-Cisco-Umbrella-Block-Page-IP-Addresses-
+OpenDNS,146.112.61.108,hit-phish.opendns.com,https://support.opendns.com/hc/en-us/articles/227986927-What-are-the-Cisco-Umbrella-Block-Page-IP-Addresses-
+OpenDNS,146.112.61.109,hit-block.opendns.com,https://support.opendns.com/hc/en-us/articles/227986927-What-are-the-Cisco-Umbrella-Block-Page-IP-Addresses-
+OpenDNS,146.112.61.110,hit-malware.opendns.com,https://support.opendns.com/hc/en-us/articles/227986927-What-are-the-Cisco-Umbrella-Block-Page-IP-Addresses-
+Microsoft,131.253.18.11,Microsoft,http://doc.emergingthreats.net/bin/view/Main/2016101
+Microsoft,131.253.18.12,Microsoft,http://doc.emergingthreats.net/bin/view/Main/2016101

@@ -26,11 +26,11 @@ def main(debug = False):
 
     # list of supported extensions we want to write out to
     out_extensions = [
-        #'json',
+        'json',
         'xls',
         'xlsx',
         'ods',
-        #'csv'
+        'csv'
     ]
 
     try:
