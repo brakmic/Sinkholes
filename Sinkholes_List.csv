@@ -75,3 +75,6 @@ OpenDNS,146.112.61.109,hit-block.opendns.com,https://support.opendns.com/hc/en-u
 OpenDNS,146.112.61.110,hit-malware.opendns.com,https://support.opendns.com/hc/en-us/articles/227986927-What-are-the-Cisco-Umbrella-Block-Page-IP-Addresses-
 Microsoft,131.253.18.11,Microsoft,http://doc.emergingthreats.net/bin/view/Main/2016101
 Microsoft,131.253.18.12,Microsoft,http://doc.emergingthreats.net/bin/view/Main/2016101
+IANA,192.175.48.6,blackhole-1.iana.org,https://en.wikipedia.org/wiki/Blackhole_server
+IANA,192.175.48.42,blackhole-2.iana.org,https://en.wikipedia.org/wiki/Blackhole_server
+IANA,192.175.48.1,prisoner.iana.org,https://en.wikipedia.org/wiki/Blackhole_server
