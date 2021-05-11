@@ -1,5 +1,5 @@
 lml==0.0.4
-lxml==4.2.5
+lxml==4.6.3
 pkg-resources==0.0.0
 pyexcel==0.5.9.1
 pyexcel-ezodf==0.3.4
