@@ -250,6 +250,38 @@ Flags:
 
 <!-- sinkholes-table:end -->
 
+## Switching an existing clone from `master` to `main`
+
+The default branch was renamed from `master` to `main` in April 2026. New
+clones get `main` automatically. Clones made before the rename still point at
+`master` and need a one-time fix.
+
+A helper script is included for both shells. From the repository root:
+
+```sh
+# macOS / Linux / Git Bash
+sh scripts/switch-to-main.sh
+```
+
+```powershell
+# Windows PowerShell
+pwsh scripts/switch-to-main.ps1
+```
+
+Either script renames the local branch, retargets its upstream, updates the
+remote `HEAD` pointer, and prunes the stale `origin/master` reference. It is
+safe to run more than once.
+
+If you would rather do it by hand, the equivalent commands are:
+
+```sh
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+git remote prune origin
+```
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
