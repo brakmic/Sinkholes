@@ -70,3 +70,101 @@ Zinkhole.org,94.23.175.2,suspended-domain.org,
 OpenDNS,146.112.61.104-110,"hit-{block,botnet,adult,malware,phish,block,malware}.opendns.com",https://support.opendns.com/hc/en-us/articles/227986927-What-are-the-Cisco-Umbrella-Block-Page-IP-Addresses-
 infosec.jp,58.158.177.102,UCOM Corp.,https://github.com/grettir/malware-sinkholes/blob/905841db3b3cd86052d577c137ac9868c92dcb3b/malware_sinkholes.txt#L256
 CNCERT/CC,183.236.2.18,China Mobile communications corporation,
+AnubisNetworks PT,62.28.241.21,anbtr.com,https://github.com/grettir/malware-sinkholes
+AnubisNetworks PT,89.115.44.100,anbtr.com,https://github.com/grettir/malware-sinkholes
+AnubisNetworks PT,195.22.4.21,anbtr.com,https://github.com/grettir/malware-sinkholes
+AnubisNetworks PT,195.22.28.192/27,anbtr.com,https://github.com/grettir/malware-sinkholes
+AnubisNetworks PT,195.38.137.100,anbtr.com,https://github.com/grettir/malware-sinkholes
+AnubisNetworks PT,195.157.15.100,anbtr.com,https://github.com/grettir/malware-sinkholes
+AnubisNetworks PT,212.61.180.100,anbtr.com,https://github.com/grettir/malware-sinkholes
+Arbor Networks ASERT,104.239.157.210,arbor-sinkhole.net,https://github.com/grettir/malware-sinkholes
+Bitdefender,5.2.189.251,Bitdefender,https://github.com/grettir/malware-sinkholes
+Blue Coat,54.208.168.113,sinkhole1.bc-gin.com,https://github.com/grettir/malware-sinkholes
+CERT Australia,150.101.125.42,cert.gov.au,https://github.com/grettir/malware-sinkholes
+CERT Polska,148.81.111.64/26,sinkhole.cert.pl,https://github.com/grettir/malware-sinkholes
+Check Point,62.0.58.94,Check Point,https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk74060
+CNCERT/CC,221.8.69.25,CNCERT/CC Conficker Sinkhole,http://www.cert.org.cn/publish/main/10/2012/20120330183823753875835/20120330183823753875835_.html
+Dell SecureWorks,45.56.77.175,ctu-sinkhole@secureworks.com,https://github.com/grettir/malware-sinkholes
+Farsight,38.102.150.27,conficker-sinkhole.net,https://github.com/grettir/malware-sinkholes
+Farsight,38.102.150.28/31,conficker-sinkhole.net,https://github.com/grettir/malware-sinkholes
+Farsight,104.244.14.252/31,sinkhole-iad1-1.cwg.fsi.io,https://github.com/grettir/malware-sinkholes
+Farsight,216.66.15.109,Farsight Security,https://github.com/grettir/malware-sinkholes
+FBI,54.83.43.69,Gameover ZeuS Sinkhole,https://www.cybereason.com/the-fbi-vs-gameover-zeus-why-the-dga-based-botnet-wins/
+Fitsec,193.166.255.170,sinkhole.fitsec.com,https://github.com/grettir/malware-sinkholes
+Georgia Tech,23.92.16.214,sinkdns.org,https://github.com/grettir/malware-sinkholes
+Georgia Tech,23.92.24.20,sinkdns.org,https://github.com/grettir/malware-sinkholes
+Georgia Tech,23.239.17.167,sinkdns.org,https://github.com/grettir/malware-sinkholes
+Georgia Tech,23.239.18.116,sinkdns.org,https://github.com/grettir/malware-sinkholes
+Georgia Tech,45.79.141.164,sinkdns.org,https://github.com/grettir/malware-sinkholes
+Georgia Tech,50.116.57.116,sinkdns.org,https://github.com/grettir/malware-sinkholes
+Georgia Tech,69.61.12.90,sinkdns.org,https://github.com/grettir/malware-sinkholes
+Georgia Tech,85.159.211.21,sinkdns.org,https://github.com/grettir/malware-sinkholes
+Georgia Tech,85.159.211.119,sinkdns.org,https://github.com/grettir/malware-sinkholes
+Georgia Tech,96.126.112.224,sinkdns.org,https://github.com/grettir/malware-sinkholes
+Georgia Tech,106.186.21.174,sinkdns.org,https://github.com/grettir/malware-sinkholes
+Georgia Tech,143.215.15.2,Georgia Institute of Technology,https://github.com/grettir/malware-sinkholes
+Georgia Tech,143.215.130.42,Georgia Institute of Technology,https://github.com/grettir/malware-sinkholes
+Georgia Tech,143.215.130.46,Georgia Institute of Technology,https://github.com/grettir/malware-sinkholes
+Georgia Tech,178.79.159.82,sinkdns.org,https://github.com/grettir/malware-sinkholes
+Georgia Tech,199.168.91.20,sinkdns.org,https://github.com/grettir/malware-sinkholes
+Georgia Tech,212.71.250.4,sinkdns.org,https://github.com/grettir/malware-sinkholes
+Georgia Tech,213.219.37.5,sinkdns.org,https://github.com/grettir/malware-sinkholes
+Kaspersky,128.199.34.140,sinkhole.kaspersky.com,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,85.214.50.92,torpig-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,85.214.83.150,torpig-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,87.106.18.112,spyeye-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,87.106.18.116,spyeye-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,87.106.18.122,spyeye-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,87.106.18.136,spyeye-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,87.106.18.141,spyeye-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,87.106.18.146,spyeye-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,87.106.190.153,spyeye-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,87.106.190.154,spyeye-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,87.106.190.157,spyeye-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,87.106.190.163,spyeye-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,87.106.190.165,spyeye-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,87.106.190.167,spyeye-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,87.106.190.169,spyeye-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,212.227.20.93,torpig-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,212.227.20.116,torpig-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,212.227.20.164,torpig-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Malware/Torpig Cabal,212.227.252.198,torpig-sinkhole.org,https://github.com/grettir/malware-sinkholes
+Now-DNS,158.69.201.47,Now-DNS.com Sinkhole,https://github.com/grettir/malware-sinkholes
+RSA Research,67.205.153.100,notasinkhole.com,https://github.com/grettir/malware-sinkholes
+RSA Research,104.236.150.45,notasinkhole.com,https://github.com/grettir/malware-sinkholes
+RSA Research,104.236.158.189,notasinkhole.com,https://github.com/grettir/malware-sinkholes
+RSA Research,128.199.76.241,notasinkhole.com,https://github.com/grettir/malware-sinkholes
+RSA Research,128.199.108.0,notasinkhole.com,https://github.com/grettir/malware-sinkholes
+RSA Research,159.203.210.188,notasinkhole.com,https://github.com/grettir/malware-sinkholes
+RSA Research,159.203.214.47,notasinkhole.com,https://github.com/grettir/malware-sinkholes
+RSA Research,192.241.211.14,notasinkhole.com,https://github.com/grettir/malware-sinkholes
+RSA Research,198.199.105.129,notasinkhole.com,https://github.com/grettir/malware-sinkholes
+RSA Research,209.249.180.243,notasinkhole.com,https://github.com/grettir/malware-sinkholes
+RSA Research,209.249.180.246,notasinkhole.com,https://github.com/grettir/malware-sinkholes
+SecurityScorecard,208.100.26.234,honeybot.us,https://github.com/grettir/malware-sinkholes
+SecurityScorecard,208.100.26.251,honeybot.us,https://github.com/grettir/malware-sinkholes
+Shadowserver,5.79.71.205,sc-a.sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,5.79.71.225,sc-b.sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,50.21.181.152,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,74.208.153.9,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,85.17.31.82,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,85.17.31.122,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,87.106.20.192,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,87.106.34.1,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,87.106.149.145,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,87.106.149.153,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,87.106.253.18,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,178.162.203.202,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,178.162.203.211,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,178.162.203.226,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,178.162.217.107,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,184.105.192.2,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,213.165.83.176,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,216.218.135.114,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,216.218.185.162,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Shadowserver,217.160.6.63,sinkhole.shadowserver.org,https://github.com/grettir/malware-sinkholes
+Spamhaus,46.148.120.173,sinkhole.ch,https://github.com/grettir/malware-sinkholes
+Spamhaus,192.42.119.41,sinkhole.ch,https://github.com/grettir/malware-sinkholes
+Vicheck.ca,54.248.229.24/31,Vicheck.ca,https://github.com/grettir/malware-sinkholes
+Zinkhole.org,87.98.254.64,zinkhole.org,https://github.com/grettir/malware-sinkholes
+Zinkhole.org,151.80.78.61,zinkhole.org,https://github.com/grettir/malware-sinkholes
